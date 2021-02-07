@@ -6,7 +6,7 @@ const slider = document.querySelector('.slider');
 const logo = document.querySelector('.logo');
 const headline = document.querySelector('.headline');
 const nav = document.querySelector('nav');
-const box = document.querySelector('.box');
+//const box = document.querySelector('.box');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
@@ -79,16 +79,25 @@ tl.fromTo(
     {opacity: 1, x: 0},
     "-=0.5")
 
-
-function scrollAppear(){
-    var boxPosition = box.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight / 2;
-    if(boxPosition < screenPosition){
-        box.classList.add('box-appear');
-    }
-};
-
-window.addEventListener('scroll', scrollAppear);
+/**
+ * Add fade inn scroll effect on 'box' classes
+  */
+document
+    // 1) Fetch all box objects
+    .querySelectorAll('.box')
+    // 2) Iterate the collection of objects
+    .forEach(box => {
+        // 3) Add an anonymous function to handle the events for each element in the collection
+        // This could be a function declared outside of this scope,
+        // but we only use this code for this operation so there is no need
+        window.addEventListener('scroll', () => {
+            const boxPosition = box.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 2;
+            if(boxPosition < screenPosition){
+                box.classList.add('box-appear');
+            }
+        });
+});
 
 /*
 import Glide from 'node_modules/@glidejs/glide'
