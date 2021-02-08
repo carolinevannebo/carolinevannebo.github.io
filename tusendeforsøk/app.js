@@ -6,7 +6,6 @@ const slider = document.querySelector('.slider');
 const logo = document.querySelector('.logo');
 const headline = document.querySelector('.headline');
 const nav = document.querySelector('nav');
-//const box = document.querySelector('.box');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
@@ -99,10 +98,6 @@ document
         });
 });
 
-/*
-import Glide from 'node_modules/@glidejs/glide'
-import Glide, { Controls, Breakpoints } from 'node_modules/@glidejs/glide/dist/glide.modular.esm'
-*/
 new Glide('.glide', {
     type: 'carousel',
     startAt: 0,

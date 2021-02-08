@@ -91,13 +91,6 @@ nav{
 .nav-links li{
     margin-left: 25px;
 }
-/*
-.nav-links li a{
-    transition: .4s ease;
-}
-.nav-links li a:hover{
-    transform: scale(2);
-}*/
 .nav-links a{
     color: white;
     text-decoration: none;
@@ -257,7 +250,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background:linear-gradient(to left, #ba7453, #d1a984);*/
     background: #0f0d0c;
     color: rgb(104, 91, 76);
 }
