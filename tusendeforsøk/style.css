@@ -235,10 +235,10 @@ nav{
 }
 .rf{
     background: transparent;
-    border-radius: 10px;
-    height: 40px;
-    width: 200px;
-    border: 1px solid white;
+    border-radius: 360px;
+    height: 50px;
+    width: 300px;
+    border: 2px solid white;
     outline: none;
     cursor: pointer;
     box-shadow: 3px 0px 3px rgb(0, 0, 0);
@@ -247,8 +247,19 @@ nav{
 .rf a{
     color: white;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-shadow: 3px 0px 3px rgb(0, 0, 0);
+}
+
+footer{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background:linear-gradient(to left, #ba7453, #d1a984);*/
+    background: #0f0d0c;
+    color: rgb(104, 91, 76);
 }
 
 /*768, 1157*/
