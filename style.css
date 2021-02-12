@@ -339,3 +339,12 @@ footer{
         padding: 10px 0px 0px 0px;
     }
 }
+
+@media screen and (max-width: 450px){
+    .reasons h1{
+        font-size: 1.25rem;
+    }
+    .gruppe p{
+        font-size: 1rem;
+    }
+}
