@@ -345,7 +345,10 @@ footer{
     .reasons h1{
         font-size: 1.25rem;
     }
-    .gruppe p{
+    .reasons h3{
         font-size: 1rem;
+    }
+    .reasons p{
+        font-size: 0.75rem;
     }
 }
