@@ -98,8 +98,6 @@ document
         });
 });
 
-urls:['./node_modules/@glidejs/glide/dist/glide.min.js']
-urls:['./node_modules/@glidejs/glide/dist/css/glide.core.min.css']
 
 new Glide('.glide', {
     type: 'carousel',
